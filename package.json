@@ -1,0 +1,13 @@
+{
+  "name": "track-dashboard",
+  "private": true,
+  "workspaces": [
+    "01_vue3_pinia"
+  ],
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-vue": "^9.3.0"
+  }
+}
