@@ -572,6 +572,11 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
+eslint-import-resolver-vite@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-vite/-/eslint-import-resolver-vite-1.0.3.tgz#57631b9ca5bf2153d96e7882c15a1c4adcfb294e"
+  integrity sha512-cVZJWtXuRjN2lFZ2o2UWNjBNWUD0FR/JKe/yEJ1k2iWV6CB1SknHoJ7rT8uA8tmhmvgGCfGhAMQGl0BhUkCA7g==
+
 eslint-module-utils@^2.7.3:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.7.3.tgz#ad7e3a10552fdd0642e1e55292781bd6e34876ee"

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+  },
+  "include": [
+    "./03_vue3_pinia_change_data/src/**/*"
+  ]
+}
