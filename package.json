@@ -2,7 +2,8 @@
   "name": "track-dashboard",
   "private": true,
   "workspaces": [
-    "01_vue3_pinia"
+    "01_vue3_pinia",
+    "02_vue3_pinia_dynamic_store"
   ],
   "devDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
