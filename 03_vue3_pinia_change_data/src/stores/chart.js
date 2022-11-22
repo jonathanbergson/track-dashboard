@@ -1,13 +1,13 @@
 import { ref } from 'vue';
 import { defineStore } from 'pinia';
-import { getChartData } from '../services/chart.service';
+import { apiGetChartData } from '../services/chart.service';
 
 export const useChartStore = (chartUUID) => (defineStore(`chart-${chartUUID}`, () => {
   const name = ref(null);
   const color = ref(null);
 
   function getData(uuid) {
-    const chart = getChartData(uuid);
+    const chart = apiGetChartData(uuid);
 
     color.value = chart.color;
     name.value = chart.name;

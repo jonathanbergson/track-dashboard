@@ -17,7 +17,7 @@ const styles = {
 
 <template>
   <div
-    class="graph-item"
+    class="cxm-Chart"
     :style="styles"
   >
     <p>{{ chart.name }}</p>
@@ -25,7 +25,7 @@ const styles = {
 </template>
 
 <style scoped>
-.graph-item {
+.cxm-Chart {
   --border-radius: 1rem;
   align-items: center;
   background-color: coral;

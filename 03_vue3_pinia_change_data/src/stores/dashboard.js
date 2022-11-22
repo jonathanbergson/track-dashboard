@@ -1,13 +1,13 @@
 import { ref } from 'vue';
 import { defineStore } from 'pinia';
-import { apiGetChartsLayout } from '../services/dashboard.service';
+import { apiGetChartList } from '../services/chart.service';
 
 export const useDashboardStore = defineStore('dashboard', () => {
-  const graphs = ref([]);
+  const chartList = ref([]);
 
-  function getGraphs() {
-    graphs.value = apiGetChartsLayout();
+  function getCharts() {
+    chartList.value = apiGetChartList();
   }
 
-  return { graphs, getGraphs };
+  return { chartList, getCharts };
 });

@@ -1,51 +1,51 @@
 <script setup>
 import { useDashboardStore } from '@/stores/dashboard';
-import CoDashboardItem from '@/components/DashboardItem.vue';
-import CoGraph from '@/components/Graph.vue';
+import CxmDashboardItem from '@/components/DashboardItem.vue';
+import CxmChart from '@/components/Chart.vue';
 
 const props = defineProps({
   title: { type: String, default: 'Dashboard' },
 });
 
 const dashboard = useDashboardStore();
-dashboard.getGraphs();
+dashboard.getCharts();
 </script>
 
 <template>
-  <div class="dashboard">
-    <header class="dashboard-header">
+  <div class="cxm-Dashboard">
+    <header class="cxm-Dashboard-Header">
       <h3>{{ props.title }}</h3>
     </header>
 
-    <section class="dashboard-graphs">
-      <co-dashboard-item
-        v-for="graph in dashboard.graphs"
-        :key="graph.uuid"
-        :height="graph.layout.h"
-        :left="graph.layout.x"
-        :top="graph.layout.y"
-        :width="graph.layout.w"
+    <section class="cxm-Dashboard-ChartList">
+      <cxm-dashboard-item
+        v-for="chart in dashboard.chartList"
+        :key="chart.uuid"
+        :height="chart.layout.h"
+        :left="chart.layout.x"
+        :top="chart.layout.y"
+        :width="chart.layout.w"
       >
-        <co-graph :uuid="graph.uuid" />
-      </co-dashboard-item>
+        <cxm-chart :uuid="chart.uuid" />
+      </cxm-dashboard-item>
     </section>
   </div>
 </template>
 
 <style scoped>
-.dashboard {
+.cxm-Dashboard {
   --dashboard-padding: 1rem;
   --header-height: 3rem;
   padding: var(--dashboard-padding);
 }
 
-.dashboard-header {
+.cxm-Dashboard-Header {
   align-items: center;
   display: flex;
   height: var(--header-height);
 }
 
-.dashboard-graphs {
+.cxm-Dashboard-ChartList {
   background-color: #c7ecee;
   border-radius: 0.5rem;
   height: calc(100vh - var(--dashboard-padding) * 2 - var(--header-height));

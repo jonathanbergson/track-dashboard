@@ -18,7 +18,7 @@ const styles = {
 
 <template>
   <div
-    class="dashboard-item"
+    class="cxm-Dashboard-Item"
     :style="styles"
   >
     <slot />
@@ -26,7 +26,7 @@ const styles = {
 </template>
 
 <style scoped>
-.dashboard-item {
+.cxm-Dashboard-Item {
   --border-radius: 1rem;
   background-color: aliceblue;
   border-radius: var(--border-radius);
